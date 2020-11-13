@@ -1,5 +1,7 @@
 ## Norapi
 ### create a virtual environment and run:
+
+
 _pip install -r requirements.txt_
 
 * scraper.py --- this is the main controller
@@ -15,3 +17,4 @@ _pip install -r requirements.txt_
 ![api](https://user-images.githubusercontent.com/71889751/99081702-7fecae00-25c3-11eb-9b36-c464742cf6e9.png)
 
 #### btw i scraped these data from https://animelist.pw/ and for the image url in sauce.json, i got it from http://takanimelist.live/
+###      if you need tips in creating a virtual environment, check here: https://www.youtube.com/watch?v=APOPm01BVrk&ab_channel=CoreySchafer
