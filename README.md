@@ -11,3 +11,7 @@ _pip install -r requirements.txt_
     * the static folder just contains a favicon.ico file, i needed to add it because any time i run app.py, it returns err 500
     ### already deployed norapi to heroku, here's the sauce:
          https://norapi.herokuapp.com/
+## PREVIEW:
+![api](https://user-images.githubusercontent.com/71889751/99081702-7fecae00-25c3-11eb-9b36-c464742cf6e9.png)
+
+#### btw i scraped these data from https://animelist.pw/ and for the image url in sauce.json, i got it from http://takanimelist.live/
