@@ -135,13 +135,14 @@ with open('sauce.json') as doc:
                 temp.append(new_sauce)
                 write_json(data)
             elif new_sauce['title'] == temp[i]['title']:
-                new_temp = temp[i]['episodes']
-                old_episodes = new_temp[0].keys()
-                new_episodes = new_sauce['episodes'][0].keys()
-                for new_episode in new_episodes:
-                    if new_episode not in old_episodes:
-                        new_temp[0].update(new_sauce['episodes'][0])
-                        write_json(data)
-                    if temp[i]['number_of_episodes_released'] < new_sauce['number_of_episodes_released']:
-                        temp[i]['number_of_episodes_released'] = new_sauce['number_of_episodes_released']
-                        write_json(data)
+                for i in range(len(temp)):
+                    new_temp = temp[i]['episodes']
+                    old_episodes = new_temp[0].keys()
+                    new_episodes = new_sauce['episodes'][0].keys()
+                    for new_episode in new_episodes:
+                        if new_episode not in old_episodes:
+                            new_temp[0].update(new_sauce['episodes'][0])
+                            write_json(data)
+                        if temp[i]['number_of_episodes_released'] < new_sauce['number_of_episodes_released']:
+                            temp[i]['number_of_episodes_released'] = new_sauce['number_of_episodes_released']
+                            write_json(data)
