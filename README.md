@@ -1,4 +1,5 @@
 ## Norapi
+# sorry, links are broken already
 ### create a virtual environment and run:
 
 
